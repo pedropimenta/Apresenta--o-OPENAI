@@ -1,3 +1,6 @@
+// Controle de Calorias JavaScript
+// create a readme.md, markdown format.
+
 function calcularCalorias(numRefeicoes, litrosAgua, kmCaminhada) {
     // Calculando as calorias gastas na caminhada
     var caloriasGastasCaminhada = kmCaminhada * 50;
@@ -21,4 +24,3 @@ function calcularCalorias(numRefeicoes, litrosAgua, kmCaminhada) {
 console.log('Controle de Calorias');
 
 console.log( calcularCalorias(3, 2, 5) );
-
