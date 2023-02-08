@@ -27,3 +27,38 @@ Cancelamentos: armazena informações sobre as reservas canceladas pelos usuári
 Administrador: Gerencia todas as tabelas do banco de dados.
 
 */
+
+
+
+
+CREATE TABLE Utilizadores (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    senha VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Carros (
+    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    tipo VARCHAR(255) NOT NULL, 
+    modelo VARCHAR(255) NOT NULL, 
+    numero_placa VARCHAR(255) NOT NULL 
+); 
+
+ CREATE TABLE Reservas ( 
+     id INTEGER PRIMARY KEY AUTOINCREMENT, 
+     data_retirada DATETIME NOT NULL, 
+     data_devolucao DATETIME NOT NULL, 
+     valor DECIMAL(10,2) NOT NULL 
+ );
+
+ CREATE TABLE Pagamentos ( 
+     id INTEGER PRIMARY KEY AUTOINCREMENT, 
+     valor DECIMAL(10,2) NOT NULL,  										   data_hora DATETIME NOT NULL  				   );
+
+ CREATE TABLE Cancelamentos (  	id INTEGER PRIMARY KEY AUTOINCREMENT,   data_hora DATETIME NOT NULL );
+
+ CREATE TABLE Administrador (   id INTEGER PRIMARY KEY AUTOINCREMENT );
+
+
+ 
